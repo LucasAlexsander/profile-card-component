@@ -1,0 +1,112 @@
+/*  MOBILE / DESKTOP
+    375px  / 1440px*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --primary-dark-cyan: hsl(185, 75%, 39%);
+    --primary-very-dark-blue: hsl(229, 23%, 23%);
+    --primary-dark-grayish-blue: hsl(227, 10%, 46%);
+    --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    font-size: 18px;
+    background-color: var(--primary-dark-cyan);
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+section .bg-image {    
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(36deg);
+}
+section .bg-image img {
+    width: 900px;
+    height: auto;
+}
+section .bg-image img:first-child {    
+    margin-right: 320px;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+.container .image img {
+    width: 100%;
+    height: auto;
+}
+.container .profile-picture {
+    top: 23%;
+    position: absolute;
+    width: 110px;
+    height: auto;
+}
+.container .profile-picture img {
+    width: 104px;
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+.container .name {
+    height: auto;
+    margin-top: 43px;
+    font-size: 18px;
+    text-align: center;
+}
+.container .name .name-info {
+    display: flex;
+    align-items: center;
+}
+.container .name .name-info h2 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.container .name p {
+    color: var(--neutral-dark-gray);
+}
+.container .name .city {
+    margin-top: -10px;
+}
+.container .name .city p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #e7e7e7;
+    margin: 28px 0px;
+}
+.container .numbers {
+    display: flex;
+    flex-direction: column;
+}
+.container .numbers .number {
+    display: flex;
+    justify-content: space-between;
+}
+.container .numbers .numbers-info {
+    display: flex;
+    justify-content: space-between;
+}
